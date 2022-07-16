@@ -46,7 +46,7 @@ function Home({ filter }) {
       </p>
     );
   return (
-    <div className="min-h-screen bg-gray-900 ">
+    <div className=" bg-gray-900 ">
       {isloading ? (
         <>
           <ProductCardSkelton cards={8} />

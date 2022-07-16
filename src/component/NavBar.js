@@ -13,7 +13,7 @@ function NavBar({ setFilter }) {
               <div className="flex space-x-3">
                 <img className="h-8 w-8" src="/logo.png" alt="logo" />
                 <span className="self-center whitespace-nowrap text-2xl font-semibold text-white ">
-                  Fake Store
+                FakeShop
                 </span>
               </div>
               <div className="hidden md:block">
