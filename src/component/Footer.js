@@ -10,10 +10,10 @@ function Foot() {
           <img
             src="/logo.png"
             className="mr-3 h-8"
-            alt="Flowbite Logo"
+            alt=" Logo"
           />
           <span className="self-center whitespace-nowrap text-2xl font-semibold text-white ">
-            Fake Product
+            Fake Store
           </span>
         </a>
         <ul className="text-md mb-6 flex flex-wrap items-center  text-gray-500 sm:mb-0">
@@ -55,7 +55,7 @@ function Foot() {
       <span className="block text-sm text-gray-500 dark:text-gray-400 sm:text-center">
         © 2022{" "}
         <a href="/" className="hover:text-white" rel="noreferrer">
-          Fake Product™
+          Fake Store™
         </a>
         . All Rights Reserved.
       </span>

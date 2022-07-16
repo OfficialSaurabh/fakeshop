@@ -1,48 +1,45 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 import { Link } from "react-router-dom";
-// import { Link } from "react-router-dom";
 
 function NavBar({ setFilter }) {
   const [isOpen, setIsOpen] = useState(false);
-  // console.log(allProduct);
   return (
     <div className="sticky top-0 z-50 ">
       <nav className="bg-gray-800 ">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
             <div className="flex items-center">
-              <div className="flex-shrink-0">
-                <img
-                  className="h-8 w-8"
-                  src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                  alt="Workflow"
-                />
+              <div className="flex space-x-3">
+                <img className="h-8 w-8" src="/logo.png" alt="logo" />
+                <span className="self-center whitespace-nowrap text-2xl font-semibold text-white ">
+                  Fake Store
+                </span>
               </div>
               <div className="hidden md:block">
-                <div className="ml-10 flex items-baseline space-x-4">
+                <div className="ml-10 flex items-baseline space-x-4 text-gray-300 ">
                   <Link
                     to="/"
-                    
-                    className=" rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700"
+                    className=" rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700  hover:text-white"
                   >
                     Home
                   </Link>
                   <Link
                     to="/"
-                    className=" rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700"
+                    className=" rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700  hover:text-white"
                   >
                     About
                   </Link>
                   <Link
                     to="/"
-                    className=" rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700"
+                    className=" rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700  hover:text-white"
                   >
                     Services
                   </Link>
                 </div>
               </div>
             </div>
+
             {/* Nav menu for small screen */}
 
             <div className="-mr-2 flex md:hidden">
@@ -104,23 +101,27 @@ function NavBar({ setFilter }) {
         >
           {ref => (
             <div className="md:hidden" id="mobile-menu">
-              <div ref={ref} className="space-y-1 px-2 pt-2 pb-3 sm:px-3">
+              <div
+                ref={ref}
+                className="space-y-1 px-2 pt-2 pb-3 text-gray-300 sm:px-3"
+              >
                 <Link
                   to="/"
-                  className=" rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700"
+                  className=" block rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 hover:text-white"
                 >
                   Home
                 </Link>
+
                 <Link
                   to="/"
-                  className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-gray-700"
+                  className="block rounded-md px-3 py-2 text-base font-medium hover:bg-gray-700 hover:text-white"
                 >
                   About
                 </Link>
 
                 <Link
                   to="/"
-                  className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                  className="block rounded-md px-3 py-2 text-base font-medium  hover:bg-gray-700 hover:text-white"
                 >
                   Services
                 </Link>
